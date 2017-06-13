@@ -1,0 +1,27 @@
+google cloud Natural language API description: https://docs.google.com/document/d/1yLsPQh6qWB__zMI31o7HMbz2NSH0cYQ-duL0xS8qPjU/edit
+
+Опис функціональних можливостей Google cloud Natural language API
+https://cloud.google.com/natural-language/
+
+Google cloud Natural language API - це інструмент для аналізу тексту.  Здійснює такі три типи аналізу: аналіз на емоційне забарвлення, синтаксичний аналіз та аналіз тексту на терміни.
+Детальна документація знаходиться тут: https://cloud.google.com/natural-language/docs/
+
+Аналіз на емоційне забарвлення (Sentiment analysis)
+Аналіз полягає у визначені того, як емоційно забарвлений текст (позитивно, негативно, нейтрально). За цим посиланням https://cloud.google.com/natural-language/docs/analyzing-sentiment
+можна знайти детальний опис аналізу, та зразки з посиланнями на оболонку у GitHub на різних мовах, включаючи Python, як можна аналізувати текст, як стрічку, або у файлі, якщо він знаходиться на Cloud Storage.
+
+Синтаксичний аналіз (Syntax analysis)
+Цей аналіз полягає у визначенні різних мовних нюансів (зв’язків між частинами речення, різних частин мови, і т.д.). Опис аналізу та зразки:
+https://cloud.google.com/natural-language/docs/analyzing-syntax
+
+Термінологічний аналіз (Entity analysis)
+Цей аналіз полягає у виявленні термінів у тексті, та “розкидуванні” їх по категоріях, таких як люди, місця, події, організації та ін. У відповідь на запит API видає JSON з виягнутими словами і інформацією про них. Також, API надає посилання на статті з Вікіпедії, де це можливо. Опис аналізу та зразки:
+https://cloud.google.com/natural-language/docs/analyzing-entities
+
+Документація містить посилання GitHub репозиторій з оболонкою на Python для Google cloud Natural language API:
+https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/language/cloud-client/v1/snippets.py
+Оболонка містить 6 функцій: 3 для аналізу тексту зі стрічок, 3 для тексту з файлів на Google Cloud Storage, Кожна функція здійснює різний аналіз із вище перелічених.
+
+Щоб могти використовувати API власноруч потрібно зробити ті ж кроки, що й для використання Google Speech API (див. A.Bevz.md).
+
+На жаль сервіс має безліч обмежень, що унеможливлює безплатне його використання для дійсних продуктів.
